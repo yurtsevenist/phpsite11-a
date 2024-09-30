@@ -14,12 +14,10 @@
 <main class="main">
 <?php 
   include "pages/home.php";
-  include "pages/about.php";
-  include "pages/portfolio.php";
-  include "pages/services.php";
-  include "pages/skills.php";
-  include "pages/contact.php";
 ?>
+<div class="col-md-12 text-center">
+    <h1>BENİM GÜZEL BLOG YAZILARIM</h1>
+</div>
 </main>
 <?php 
   include "layouts/footer.php";
