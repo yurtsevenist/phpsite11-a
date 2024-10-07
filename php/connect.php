@@ -3,7 +3,7 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 try {
-  $veritabani = new PDO("mysql:host=$servername;dbname=myportfolyo;charset=utf8", $username, $password);
+  $veritabani = new PDO("mysql:host=$servername;dbname=mydb;charset=utf8", $username, $password);
   $veritabani->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
  
 } catch(PDOException $e) {
