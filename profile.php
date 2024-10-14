@@ -9,7 +9,8 @@
                                     <div class="card-title">Profil Bilgilerim</div>
                                 </div> <!--end::Header--> <!--begin::Form-->
                                 <form action="php/profileUpdate.php" method="POST" enctype="multipart/form-data"> <!--begin::Body-->
-                                    <div class="card-body">
+                                <input type="hidden" name="id" value=<?php echo $_SESSION["id"] ?>>   
+                                <div class="card-body">
                                     <div class="mb-3">
                                          <label for="email" class="form-label">Adınız Soyadınız</label> 
                                         <input type="text" class="form-control" id="name" name="name" required value="<?php echo $_SESSION["name"] ?> " >                                            
