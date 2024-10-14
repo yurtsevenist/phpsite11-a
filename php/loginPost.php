@@ -20,6 +20,7 @@
                 $pass=$sor["password"];
                 $email=$sor["email"];
                 $who=$sor["who"];
+                $date=$sor["date"];
             }
             if (password_verify($password, $pass))
             {
@@ -28,6 +29,7 @@
                 $_SESSION["name"]=$name;
                 $_SESSION["email"]=$email;
                 $_SESSION["who"]=$who;
+                $_SESSION["date"]=$date;
                 $_SESSION["access_key"]="abcd1234";    
                 echo "<script>
                 alert('Hoşgeldiniz');
