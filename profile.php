@@ -19,11 +19,15 @@
                                         <input type="email" class="form-control" id="email" name="email" required readonly value="<?php echo $_SESSION["email"] ?>" >                                            
                                         </div>
                                         <div class="mb-3">
-                                             <label for="password" class="form-label">Şifre</label> 
+                                             <label for="old_password" class="form-label">Eski Şifreniz</label> 
+                                             <input type="password" class="form-control" id="old_password" name="old_password" required> 
+                                        </div>
+                                        <div class="mb-3">
+                                             <label for="password" class="form-label">Yeni Şifre</label> 
                                              <input type="password" class="form-control" id="password" name="password" required> 
                                         </div>
                                         <div class="mb-3">
-                                             <label for="password_confirmation" class="form-label">Şifre Tekrar</label> 
+                                             <label for="password_confirmation" class="form-label">Yeni Şifre Tekrar</label> 
                                              <input type="password_confirmation" class="form-control" id="password_confirmation" name="password_confirmation" required> 
                                         </div>
                                         <div class="mb-3"> 
