@@ -9,7 +9,7 @@
                                     <div class="card-title">Profil Bilgilerim</div>
                                 </div> <!--end::Header--> <!--begin::Form-->
                                 <form action="php/profileUpdate.php" method="POST" enctype="multipart/form-data"> <!--begin::Body-->
-                                <input type="hidden" name="id" value=<?php echo $_SESSION["id"] ?>>   
+                                <input type="hidden" name="id" value="<?php echo $_SESSION["id"] ?>">   
                                 <div class="card-body">
                                     <div class="mb-3">
                                          <label for="email" class="form-label">Adınız Soyadınız</label> 
@@ -29,7 +29,7 @@
                                         </div>
                                         <div class="mb-3">
                                              <label for="password_confirmation" class="form-label">Yeni Şifre Tekrar</label> 
-                                             <input type="password_confirmation" class="form-control" id="password_confirmation" name="password_confirmation" required> 
+                                             <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" required> 
                                         </div>
                                         <div class="mb-3"> 
                                            <label for="imageurl" class="form-label">Profil Resmi</label>                                           

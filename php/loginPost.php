@@ -19,6 +19,7 @@
                 $name=$sor["name"];
                 $pass=$sor["password"];
                 $email=$sor["email"];
+                $imageurl=$sor["imageurl"];
                 $who=$sor["who"];
                 $date=$sor["date"];
             }
@@ -30,6 +31,7 @@
                 $_SESSION["email"]=$email;
                 $_SESSION["who"]=$who;
                 $_SESSION["date"]=$date;
+                $_SESSION["imageurl"]=$imageurl;
                 $_SESSION["access_key"]="abcd1234";    
                 echo "<script>
                 alert('Hoşgeldiniz');
