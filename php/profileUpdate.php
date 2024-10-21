@@ -95,7 +95,7 @@
                                     $uzantisi = $uzantisi[count($uzantisi) - 1]; // ve daha sonra 1 den fazla nokta olma ihtimaline karşı en son noktadan sonrasını al dedik.
                                     $resimklasor = "../profile_images/" . time() . "." . $uzantisi; // resime yeni isim vereceğimiz için zamana göre yeni bir isim oluşturduk ve yüklemesi gerektiği yeride belirttik.
                                     $resimyol = "profile_images/" . time() . "." . $uzantisi; // resime yeni isim vereceğimiz için zamana göre yeni bir isim oluşturduk ve yüklemesi gerektiği yeride belirttik.
-                                    $eskiresim="../".$image;
+                                    $eskiresim="../".$imageurl;
                                     //yuklenecek_yer/resim_adi.uzantisi
                         
                                     if ($tip == 'image/jpeg' || $tip == 'image/png' || $tip=='image/bmp' || $tip=='image/gif' ) { //uzantısnın kontrolünü sağladık. sadece .jpg ve .png yükleyebilmesi için.
