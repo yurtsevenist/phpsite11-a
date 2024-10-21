@@ -9,6 +9,12 @@
                                     <li class="nav-item"> <a href="profile.php" class="nav-link <?php active('profile.php');?>"> <i class="nav-icon bi bi-person-bounding-box"></i>
                                         <p>Profil Bilgileri</p>
                                     </a> </li>
+                                    <li class="nav-item"> <a href="myblogs.php" class="nav-link <?php active('myblogs.php');?>"> <i class="nav-icon bi bi-book-half"></i>
+                                        <p>Blog Yazılarım</p>
+                                    </a> </li>
+                                    <li class="nav-item"> <a href="blogcreate.php" class="nav-link <?php active('blogcreate.php');?>"> <i class="nav-icon bi bi-pencil-square"></i>
+                                        <p>Blog Yaz</p>
+                                    </a> </li>
                                     <li class="nav-item"> <a href="php/logout.php" class="nav-link"> <i class="nav-icon bi bi-box-arrow-right"></i>
                                         <p>Oturumu Kapat</p>
                                     </a> </li>

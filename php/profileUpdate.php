@@ -93,8 +93,9 @@
                                     $resimAdi = $_FILES['imageurl']['name']; //resmin adını öğrendik.                                    
                                     $uzantisi = explode('.', $resimAdi); // uzantısını öğrenmek için . işaretinden parçaladık.
                                     $uzantisi = $uzantisi[count($uzantisi) - 1]; // ve daha sonra 1 den fazla nokta olma ihtimaline karşı en son noktadan sonrasını al dedik.
-                                    $resimklasor = "../profile_images/" . time() . "." . $uzantisi; // resime yeni isim vereceğimiz için zamana göre yeni bir isim oluşturduk ve yüklemesi gerektiği yeride belirttik.
-                                    $resimyol = "profile_images/" . time() . "." . $uzantisi; // resime yeni isim vereceğimiz için zamana göre yeni bir isim oluşturduk ve yüklemesi gerektiği yeride belirttik.
+                                    $imagename=time() . "." . $uzantisi;
+                                    $resimklasor = "../profile_images/" . $imagename; // resime yeni isim vereceğimiz için zamana göre yeni bir isim oluşturduk ve yüklemesi gerektiği yeride belirttik.
+                                    $resimyol = "profile_images/" . $imagename; // resime yeni isim vereceğimiz için zamana göre yeni bir isim oluşturduk ve yüklemesi gerektiği yeride belirttik.
                                     $eskiresim="../".$imageurl;
                                     //yuklenecek_yer/resim_adi.uzantisi
                         

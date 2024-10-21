@@ -25,7 +25,7 @@
   <div class="col-md-6 offset-md-3 card mb-3 mt-3">
   <img src="<?php echo $blog->imageurl ?>" class="card-img-top" alt="...">
   <div class="card-body">
-    <h2 class="card-title"><?php echo $blog->header ?></h2>    
+    <h2 class="card-title"><a class="text-primary" href="blogdetail.php?id=<?=$blog->id?>"><?php echo $blog->header ?></a></h2>    
     <p class="card-text"><small class="text-body-secondary"><?php echo $blog->date ?></small></p>
   </div>
 </div>

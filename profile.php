@@ -2,7 +2,25 @@
    include "dashboard/header.php";
    include "dashboard/aside.php";
   ?>
-<main>
+ <main class="app-main"> <!--begin::App Content Header-->
+ <div class="app-content-header"> <!--begin::Container-->
+                <div class="container-fluid"> <!--begin::Row-->
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h3 class="mb-0">Profil Bilgileri</h3>
+                        </div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-end">
+                                <li class="breadcrumb-item"><a href="dashboard.php">Anasayfa</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">
+                                    Profil Bilgileri
+                                </li>
+                            </ol>
+                        </div>
+                    </div> <!--end::Row-->
+                </div> <!--end::Container-->
+            </div> <!--end::App Content Header--> <!--begin::App Content-->
+         
    <div class="col-md-6 offset-md-3 mt-5">
    <div class="card card-primary card-outline mb-4"> <!--begin::Header-->
                                 <div class="card-header">
@@ -41,6 +59,7 @@
                                 </form> <!--end::Form-->
                             </div> <!--end::Quick Example--> <!--begin::Input Group-->
    </div>
+
 </main>
 <?php 
    include "dashboard/footer.php";  

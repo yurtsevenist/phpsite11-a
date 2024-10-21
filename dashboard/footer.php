@@ -221,6 +221,26 @@
         );
         sparkline3.render();
     </script> <!--end::Script-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.9.0/dist/summernote.min.js"></script>
+      <script>
+    $(document).ready(function() {
+        $('#summernote').summernote({
+        placeholder: 'Blog yazınızı buraya yazabilirsiniz...',
+        tabsize: 2,
+        height: 120,
+        toolbar: [
+          ['style', ['style']],
+          ['font', ['bold', 'underline', 'clear']],
+          ['color', ['color']],
+          ['para', ['ul', 'ol', 'paragraph']],
+          ['table', ['table']],
+          ['insert', ['link', 'picture', 'video']],
+          ['view', ['codeview', 'help']]
+        ]
+      });
+    });
+  </script>
 </body><!--end::Body-->
 
 </html>
