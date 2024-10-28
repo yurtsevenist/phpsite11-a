@@ -33,8 +33,7 @@
 ?>
 <div class="col-md-12 text-center">
   <h1 class="mb-3 fw-bold"><?php echo $header ?></h1>
-  <hr>
- 
+  <hr> 
   <div class="col-md-8 offset-md-2 card mb-3 mt-3">
   <img src="<?php echo $imageurl ?>" class="card-img-top" alt="...">
   <div class="card-body">

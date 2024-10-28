@@ -3,6 +3,7 @@
     include "connect.php";
     $header=$_POST['header'];  
     $content=$_POST['content'];
+    $author=$_POST['author'];
     if (isset($_FILES['blogimage']))
     {
         $hata = $_FILES['blogimage']['error']; //resim inputundan gönderilen hatayı aldık.
@@ -33,8 +34,8 @@
                 $resimyol = "blog_images/" . $imagename; // resime yeni isim vereceğimiz için zamana göre yeni bir isim oluşturduk ve yüklemesi gerektiği yeride belirttik.
                 if ($tip == 'image/jpeg' || $tip == 'image/png' || $tip=='image/bmp' || $tip=='image/gif' ) { //uzantısnın kontrolünü sağladık. sadece .jpg ve .png yükleyebilmesi için.
                     if (move_uploaded_file($_FILES["blogimage"]["tmp_name"], $resimklasor)) {                 
-                        $kayit=$veritabani->prepare("INSERT INTO blogs SET header=?, content=?, imageurl=?");
-                        $kayit->execute(array($header,$content,$resimyol));
+                        $kayit=$veritabani->prepare("INSERT INTO blogs SET header=?, content=?,author=?, imageurl=?");
+                        $kayit->execute(array($header,$content,$author,$resimyol));
                         echo "<script>
                         alert('Blog kaydı tamamlanmıştır.');
                         window.location.href='../blogcreate.php';

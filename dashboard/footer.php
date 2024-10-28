@@ -241,6 +241,25 @@
       });
     });
   </script>
+  <script src="https://cdn.datatables.net/v/dt/dt-2.1.8/datatables.min.js"></script>
+  <script>
+    new DataTable('#myblog', {
+    columnDefs: [
+        {
+            targets: [0],
+            orderData: [0, 1]
+        },
+        {
+            targets: [1],
+            orderData: [1, 0]
+        },
+        {
+            targets: [4],
+            orderData: [4, 0]
+        }
+    ]
+});
+  </script>
 </body><!--end::Body-->
 
 </html>

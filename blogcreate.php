@@ -39,6 +39,7 @@
                                     <div class="card-title">Blog Yazısı</div>
                                 </div> <!--end::Header--> <!--begin::Form-->
                                 <form action="php/blogCreate.php" method="POST" enctype="multipart/form-data"> <!--begin::Body-->
+                                    <input type="hidden" name="author" value="<?php echo $_SESSION['name'] ?>">
                                     <div class="card-body">
                                         <div class="mb-3"> <label for="header" class="form-label">Başlık</label> 
                                         <input type="text" class="form-control" id="header" name="header" required >                                            
